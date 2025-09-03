@@ -12,7 +12,7 @@
  * limitations under the License.
  */
 
-import { OverlayTemplate, CircleAttrs, TextAttrs } from 'klinecharts'
+import { OverlayTemplate, CircleAttrs, TextAttrs } from '@ulachart/core'
 
 const fibonacciCircle: OverlayTemplate = {
   name: 'fibonacciCircle',

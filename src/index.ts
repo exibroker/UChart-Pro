@@ -12,7 +12,7 @@
  * limitations under the License.
  */
 
-import { registerOverlay } from 'klinecharts'
+import { registerOverlay } from '@ulachart/core'
 
 import overlays from './extension'
 

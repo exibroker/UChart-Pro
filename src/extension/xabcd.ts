@@ -12,7 +12,7 @@
  * limitations under the License.
  */
 
-import { OverlayTemplate, PolygonAttrs, LineAttrs } from 'klinecharts'
+import { OverlayTemplate, PolygonAttrs, LineAttrs } from '@ulachart/core'
 
 const xabcd: OverlayTemplate = {
   name: 'xabcd',

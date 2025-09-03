@@ -14,13 +14,32 @@
 
 import zhCN from './zh-CN.json'
 import enUS from './en-US.json'
+import esES from './es-ES.json'
+import frFR from './fr-FR.json'
+import idID from './id-ID.json'
+import jaJP from './ja-JP.json'
+import koKR from './ko-KR.json'
+import ruRU from './ru-RU.json'
+import thTH from './th-TH.json'
+import trTR from './tr-TR.json'
+import viVN from './vi-VN.json'
 
 const locales = {
   'zh-CN': zhCN,
-  'en-US': enUS
+  'en-US': enUS,
+  'es-ES': esES,
+  'fr-FR': frFR,
+  'id-ID': idID,
+  'ja-JP': jaJP,
+  'ko-KR': koKR,
+  'ru-RU': ruRU,
+  'th-TH': thTH,
+  'tr-TR': trTR,
+  'vi-VN': viVN,
+
 }
 
-export function load (key: string, ls: any) {
+export function load(key: string, ls: any) {
   // @ts-expect-error
   locales[key] = ls
 }

@@ -1,4 +1,6 @@
-<h1 align="center">KLineChart Pro</h1>
+> **Note:** this repo is a fork of [klinecharts](https://github.com/klinecharts/pro), renamed, converted to typescript and bug fixes applied due to the original project being unmaintained.
+
+<h1 align="center">UlaChart Pro</h1>
 <p align="center">Financial chart built out of the box based on KLineChart.</p>
 
 <div align="center">
@@ -11,27 +13,19 @@
 </div>
 
 ## Install
+
 ### Using npm or yarn
+
 ```bash
 # using npm
-npm install @klinecharts/pro --save
+npm install @ulachart/pro --save
 
 # using yarn
-yarn add @klinecharts/pro
-```
-
-### Using unpkg or jsDelivr
-```html
-<!-- using unpkg -->
-<script src="https://unpkg.com/@klinecharts/pro/dist/klinecharts-pro.umd.js"></script>
-
-<!-- using jsdelivr -->
-<script src="https://cdn.jsdelivr.net/npm/@klinecharts/pro/dist/klinecharts-pro.umd.js"></script>
+yarn add @ulachart/pro
 ```
 
 ## Docs
-+ [中文](https://pro.klinecharts.com)
-+ [English](https://pro.klinecharts.com/en-US)
 
 ## ©️ License
-KLineChart Pro is available under the Apache License V2.
+
+UlaChart Pro is available under the Apache License V2.

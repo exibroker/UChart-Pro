@@ -9,27 +9,27 @@ export default defineConfig({
     cssTarget: 'chrome61',
     sourcemap: true,
     rollupOptions: {
-      external: ['klinecharts'],
+      external: ['ucharts'],
       output: {
         assetFileNames: (chunkInfo) => {
           if (chunkInfo.name === 'style.css') {
-            return 'klinecharts-pro.css'
+            return 'charts.css'
           }
         },
         globals: {
-          klinecharts: 'klinecharts'
+          ucharts: 'ucharts'
         },
       },
     },
     lib: {
       entry: './src/index.ts',
-      name: 'klinechartspro',
+      name: 'chartspro',
       fileName: (format) => {
         if (format === 'es') {
-          return 'klinecharts-pro.js'
+          return 'charts-pro.js'
         }
         if (format === 'umd') {
-          return 'klinecharts-pro.umd.js'
+          return 'charts-pro.umd.js'
         }
       }
     }

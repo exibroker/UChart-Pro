@@ -1,10 +1,10 @@
 {
-  "name": "@klinecharts/pro",
-  "version": "0.1.1",
-  "description": "Financial chart built out of the box based on KLineChart.",
+  "name": "@ulachart/pro",
+  "version": "0.0.2",
+  "description": "Financial chart built out of the box based on Ula charts.",
   "type": "module",
-  "main": "./dist/klinecharts-pro.umd.js",
-  "module": "./dist/klinecharts-pro.js",
+  "main": "./dist/charts-pro.umd.js",
+  "module": "./dist/charts-pro.js",
   "types": "./dist/index.d.ts",
   "files": [
     "LICENSE",
@@ -13,7 +13,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/klinecharts/pro"
+    "url": "https://github.com/exibroker/uchart-pro"
   },
   "keywords": [
     "klinecharts",
@@ -24,12 +24,12 @@
     "chart",
     "canvas"
   ],
-  "author": "liihuu",
+  "author": "exi",
   "license": "Apache-2.0",
   "private": false,
   "scripts": {
     "build-core": "tsc && vite build",
-    "build-dts": "dts-bundle-generator --no-banner true --umd-module-name klinechartspro -o dist/index.d.ts src/index.ts",
+    "build-dts": "dts-bundle-generator --no-banner true --umd-module-name ulachartpro -o dist/index.d.ts src/index.ts",
     "build": "npm run build-core && npm run build-dts",
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
@@ -63,6 +63,6 @@
     "solid-js": "^1.6.11"
   },
   "peerDependencies": {
-    "klinecharts": ">=9.0.0"
+    "@ulachart/core": ">=0.0.2"
   }
 }
