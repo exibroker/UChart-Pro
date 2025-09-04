@@ -1,0 +1,32 @@
+@import (reference) '../../base.less';
+.period {
+	position: relative;
+}
+.dropdown-content {
+	position: absolute;
+	top: 40px;
+	left: 0;
+	background-color: var(--ucharts-pro-popover-background-color);
+	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+	border-radius: 4px;
+	min-width: fit-content;
+	z-index: 99;
+	.dropdown-item {
+		width: 100%;
+		padding: 0.325rem 1rem;
+		text-align: left;
+		width: 180px;
+		cursor: pointer;
+		display: flex;
+		align-items: center;
+		gap: 3px;
+		&:hover,
+		&:active,
+		&:focus {
+			background-color: var(--ucharts-pro-hover-background-color);
+		}
+		.time {
+			text-transform: capitalize;
+		}
+	}
+}
